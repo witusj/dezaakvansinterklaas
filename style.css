@@ -1,0 +1,16 @@
+.navbar {
+	background-color: #ed1c24;
+}
+
+.title {
+	background-image: url('title.jpg');
+}
+
+.jumbotron {
+	width: 40%;
+	background-color: #dfb28b;
+}
+
+.btn {
+	background-color: #00b903;
+}
