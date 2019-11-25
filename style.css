@@ -6,8 +6,13 @@
 	background-image: url('title.jpg');
 }
 
-.jumbotron {
+.jumbo-lg {
 	width: 40%;
+	background-color: #dfb28b;
+}
+
+.jumbo-sm {
+	width: 100%;
 	background-color: #dfb28b;
 }
 
