@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,11 +14,16 @@
 		<title>De Zaak van Sinterklaas</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg d-none d-md-block">
 			<div class="navbar-brand" href="#">
 				<img src="sinterklaas.png" width="60" height="60" alt="" />
-				<span class="h1 text-white px-3 d-none d-md-block">De Zaak van Sinterklaas</span>
-				<span class="h4 text-white px-3 d-sm-none">De Zaak van Sinterklaas</span>
+				<span class="h1 text-white px-3">De Zaak van Sinterklaas</span>
+			</div>
+		</nav>
+		<nav class="navbar navbar-expand-lg d-md-none">
+			<div class="navbar-brand" href="#">
+				<img src="sinterklaas.png" width="60" height="60" alt="" />
+				<span class="h2 text-white px-3">De Zaak van Sinterklaas</span>
 			</div>
 		</nav>
 		<div class="d-none d-md-block title p-5">
@@ -34,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="jumbotron d-sm-none jumbo-sm">
+		<div class="jumbotron d-md-none jumbo-sm">
 			<div class="container">
 				<h1 class="display-4">Hallo Bibi!</h1>
 				<p class="lead">
