@@ -75,7 +75,12 @@
 									Cruisuuuh! Lekker met 5.000 anderen in een ijzeren badkuip de oceaan op.
 								</p>
 								<div class="h3 my-5">Nu slechts 2.250 EUR!</div>
-								<button type="button" class="btn text-white btn-lg align-self-end">
+								<button
+									type="button"
+									class="btn text-white btn-lg align-self-end"
+									id="cruise"
+									onclick="showModal(this.id)"
+								>
 									Bestèl mer!
 								</button>
 							</div>
@@ -96,7 +101,12 @@
 									Een boek over Python. En in het Duits.
 								</p>
 								<div class="h3 my-5">Van 125 voor 225 EUR!</div>
-								<button type="button" class="btn text-white btn-lg align-self-end">
+								<button
+									type="button"
+									class="btn text-white btn-lg align-self-end"
+									id="python"
+									onclick="showModal(this.id)"
+								>
 									Bestèl mer
 								</button>
 							</div>
@@ -119,7 +129,12 @@
 									Je bent een tijger. Wild en elegant. Ontembaar. Oeh ja!
 								</p>
 								<div class="h3 my-5">Van 15 voor 150 EUR!</div>
-								<button type="button" class="btn text-white btn-lg align-self-end">
+								<button
+									type="button"
+									class="btn text-white btn-lg align-self-end"
+									id="tiger"
+									onclick="showModal(this.id)"
+								>
 									Bestèl mer!
 								</button>
 							</div>
@@ -140,7 +155,12 @@
 									Lekker met je zoon cruisen, bitches scoren en cops killen. Bakkie pepernoten erbij.
 								</p>
 								<div class="h3 my-5">Van 7 voor 75 EUR!</div>
-								<button type="button" class="btn text-white btn-lg align-self-end">
+								<button
+									type="button"
+									class="btn text-white btn-lg align-self-end"
+									id="gta"
+									onclick="showModal(this.id)"
+								>
 									Bestèl mer!
 								</button>
 							</div>
@@ -164,7 +184,12 @@
 									pannetje.
 								</p>
 								<div class="h3 my-5">Van 89 voor 95 EUR!</div>
-								<button type="button" class="btn text-white btn-lg align-self-end">
+								<button
+									type="button"
+									class="btn text-white btn-lg align-self-end"
+									id="fondue"
+									onclick="showModal(this.id)"
+								>
 									Bestèl mer!
 								</button>
 							</div>
@@ -185,7 +210,12 @@
 									Ga lekker los op Mahler! Maak van ieder feest een begrafenis.
 								</p>
 								<div class="h3 my-5">Van 12,50 voor 45 EUR!</div>
-								<button type="button" class="btn text-white btn-lg align-self-end">
+								<button
+									type="button"
+									class="btn text-white btn-lg align-self-end"
+									id="mahler"
+									onclick="showModal(this.id)"
+								>
 									Bestèl mer!
 								</button>
 							</div>
@@ -209,7 +239,12 @@
 									<a href="https://www.facebook.com/andrerieuitalianfan/" target="_blank">fanclub</a>
 								</p>
 								<div class="h3 my-5">Van 15 voor 50 EUR!</div>
-								<button type="button" class="btn text-white btn-lg align-self-end">
+								<button
+									type="button"
+									class="btn text-white btn-lg align-self-end"
+									id="rieu"
+									onclick="showModal(this.id)"
+								>
 									Bestèl mer!
 								</button>
 							</div>
@@ -233,56 +268,30 @@
 								<button
 									type="button"
 									class="btn text-white btn-lg align-self-end"
-									data-toggle="modal"
-									data-target="#exampleModalLong"
+									id="oorbel"
+									onclick="showModal(this.id)"
 								>
 									Bestèl mer!
 								</button>
-								<div
-									class="modal fade"
-									id="exampleModalLong"
-									tabindex="-1"
-									role="dialog"
-									aria-labelledby="exampleModalLongTitle"
-									aria-hidden="true"
-								>
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-												<button
-													type="button"
-													class="close"
-													data-dismiss="modal"
-													aria-label="Close"
-												>
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												Van Sint vraag ik niet veel dit jaar. Ik ben met heel die discussie
-												volledig klaar! Laat hij gewoon maar in Spanje blijven, dan hoeft hier
-												niemand meer te kijven.
-												<br />
-
-												Sint was leuk, je kreeg nog eens wat, leuke dingen waar je wat aan had.
-												Maar nu, het plezier ontbreekt, omdat men elkaar de oorlog preekt.
-												<br />
-
-												Ik stop met Sint is nu mijn leus. Geloof het maar, ik meen het heus. Die
-												arme Sint krijgt stank voor dank, voor mij hoeft hij niet meer naar de
-												bank
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn text-white" data-dismiss="modal">
-													Close
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myTitle"></h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<p id="myTxt"></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default text-white" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
@@ -290,5 +299,67 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script>
+			function showModal(clicked_id) {
+				let poems = [
+					{
+						id: 'cruise',
+						title: 'Augustus',
+						text:
+							'"Iets meer liefde mocht"<br>Een toverspreuk zo bleek<br>Terwijl je het niet zocht<br>Vond het jou die week',
+					},
+					{
+						id: 'python',
+						title: 'Twee jaar',
+						text:
+							'Een jaar en nog een jaar<br>Geworteld en gegroeid<br>Inmiddels een echt paar<br>Waar liefde tussen bloeit',
+					},
+					{
+						id: 'tiger',
+						title: 'Zien',
+						text:
+							'Je hebt altijd gegeven<br>Royaal vanuit het hart<br>Nooit vroeg je: “mag IK even”<br>Ik zag dat lieve Schat',
+					},
+					{
+						id: 'gta',
+						title: 'Regenboog',
+						text:
+							'Tranen die dwalen<br>Naar de krul van je mond<br>Ze laten je stralen<br>Als druppels in de zon',
+					},
+					{
+						id: 'fondue',
+						title: 'Geloof',
+						text:
+							'De twijfels verbroken<br>Gelofte naar elkaar<br>Duidelijk uitgesproken<br>Bezegeld volgend jaar',
+					},
+					{
+						id: 'mahler',
+						title: 'Thuishoren',
+						text:
+							'"Blijft u op deze plek?"<br>Vroeg de oude vrouw<br>"Voor als ik zo direct<br>Mijn man niet vinden zou"',
+					},
+					{
+						id: 'rieu',
+						title: 'Twee jaar',
+						text:
+							'"Iets meer liefde mocht"<br>Een toverspreuk zo bleek<br>Terwijl je het niet zocht<br>Vond het jou die week',
+					},
+					{
+						id: 'oorbel',
+						title: 'Twee jaar',
+						text:
+							'"Iets meer liefde mocht"<br>Een toverspreuk zo bleek<br>Terwijl je het niet zocht<br>Vond het jou die week',
+					},
+				];
+				let item = clicked_id;
+				let poem = poems.find(obj => {
+					return obj.id === item;
+				});
+				console.log(item);
+				document.getElementById('myTitle').innerHTML = poem.title;
+				document.getElementById('myTxt').innerHTML = poem.text;
+				$('#myModal').modal();
+			}
+		</script>
 	</body>
 </html>
